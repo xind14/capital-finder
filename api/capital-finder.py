@@ -3,6 +3,14 @@ from urllib import parse
 import requests
 
 class handler(BaseHTTPRequestHandler):
+    """
+    A simple HTTP request handler that responds to GET requests with information about countries and their capitals.
+    
+    Usage:
+        - /?country=<country_name>: Returns the capital of the specified country.
+        - /?capital=<capital_name>: Returns the country with the specified capital.
+    """
+    
     def do_GET(self):
         url = self.path
         url_components = parse.urlsplit(url)
