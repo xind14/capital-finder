@@ -1,4 +1,4 @@
-# Lab: Class 16
+# Lab: Class 16 - Capital Finder
 
 ## Author: Xin Deng
 
