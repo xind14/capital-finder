@@ -10,7 +10,8 @@ class handler(BaseHTTPRequestHandler):
         - /?country=<country_name>: Returns the capital of the specified country.
         - /?capital=<capital_name>: Returns the country with the specified capital.
     """
-    
+
+    #  https://capital-finder-xind14.vercel.app/api/capital-finder?country=Japan
     def do_GET(self):
         url = self.path
         url_components = parse.urlsplit(url)
@@ -25,12 +26,13 @@ class handler(BaseHTTPRequestHandler):
             data = response.json()
 
             for country_info in data:
-                if 'name' in country_info and 'common' in country_info['name'] and country_info['name']['common'] == country_name:
-                    capital_list = country_info.get('capital', [])
-                    if capital_list:
-                        capital = capital_list[0]
-                        message = f"The capital of {country_name} is {capital}."
-                        break
+                if 'name' in country_info and 'common' in country_info['name']: 
+                    if country_info['name']['common'] == country_name:
+                        capital_list = country_info.get('capital', [])
+                        if capital_list:
+                            capital = capital_list[0]
+                            message = f"The capital of {country_name} is {capital}."
+                            break
             else:
                 message = f"Country {country_name} not found."
 
