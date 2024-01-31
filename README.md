@@ -81,6 +81,10 @@ Build 1.1 Feature Tasks
 
 2. Remotely
 
-- Test to look up a country: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=Japan](https://capital-finder-xind14.vercel.app/api/capital-finder?country=Japan)
+- Test to look up a country: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=Cuba](https://capital-finder-xind14.vercel.app/api/capital-finder?country=Cuba)
 
-- Test to look up a capital: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Tokyo](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Tokyo)
+- Test to look up a country with lowercase: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=greece](https://capital-finder-xind14.vercel.app/api/capital-finder?country=greece)
+
+- Test to look up a capital: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Athens](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Athens)
+
+- Test to look up a capital with lowercase: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=berlin](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=berlin)
