@@ -9,6 +9,7 @@
 - [REST Countries API](https://restcountries.com/#rest-countries)
 - [Vercel Python requirements](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
 - [Vercel CLI](https://vercel.com/docs/cli)
+- TAs: Brandon and Tammy
 
 ### Set up
 
@@ -57,6 +58,13 @@ Build 1.0 Feature Tasks
 2. Get request that handles a capital name and responds with a string
 3. Use requests library to handle REST Countries API
 
+#### Version 1.1
+
+Build 1.1 Feature Tasks
+
+1. Allow lower and capitalize input in url
+
+
 ### To run capital-finder:
 
 1. Go to [Vercel site](https://capital-finder-xind14.vercel.app/)
@@ -73,6 +81,10 @@ Build 1.0 Feature Tasks
 
 2. Remotely
 
-- Test to look up a country: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=Japan](https://capital-finder-xind14.vercel.app/api/capital-finder?country=Japan)
+- Test to look up a country: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=Cuba](https://capital-finder-xind14.vercel.app/api/capital-finder?country=Cuba)
 
-- Test to look up a capital: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Tokyo](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Tokyo)
+- Test to look up a country with lowercase: [https://capital-finder-xind14.vercel.app/api/capital-finder?country=greece](https://capital-finder-xind14.vercel.app/api/capital-finder?country=greece)
+
+- Test to look up a capital: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Athens](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=Athens)
+
+- Test to look up a capital with lowercase: [https://capital-finder-xind14.vercel.app/api/capital-finder?capital=berlin](https://capital-finder-xind14.vercel.app/api/capital-finder?capital=berlin)
