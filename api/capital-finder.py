@@ -21,23 +21,21 @@ class handler(BaseHTTPRequestHandler):
         dictionary_api_url = "https://restcountries.com/v3.1/all?fields=name,capital"
 
         if 'country' in dictionary:
-            country_name = dictionary['country']
+            dict_name = dictionary['country']
+            country_name=dict_name.capitalize()
             response = requests.get(dictionary_api_url)
             data = response.json()
 
             for country_info in data:
-                if 'name' in country_info and 'common' in country_info['name']: 
                     if country_info['name']['common'] == country_name:
                         capital_list = country_info.get('capital', [])
                         if capital_list:
                             capital = capital_list[0]
                             message = f"The capital of {country_name} is {capital}."
-                            break
-            else:
-                message = f"Country {country_name} not found."
 
         elif 'capital' in dictionary:
-            capital_name = dictionary['capital']
+            dict_capital_name = dictionary['capital']
+            capital_name=dict_capital_name.capitalize()
             response = requests.get(dictionary_api_url)
             data = response.json()
 
@@ -45,8 +43,7 @@ class handler(BaseHTTPRequestHandler):
                 if 'capital' in country_info and capital_name in country_info['capital']:
                     country_name = country_info['name']['common']
                     message = f"{capital_name} is the capital of {country_name}."
-                    break
-
+                
         else:
             message = "Invalid. Please provide either 'country' or 'capital' search."
 
