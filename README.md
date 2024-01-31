@@ -9,6 +9,7 @@
 - [REST Countries API](https://restcountries.com/#rest-countries)
 - [Vercel Python requirements](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
 - [Vercel CLI](https://vercel.com/docs/cli)
+- TAs: Brandon and Tammy
 
 ### Set up
 
@@ -56,6 +57,13 @@ Build 1.0 Feature Tasks
 1. Get request that handles a country name and responds with a string
 2. Get request that handles a capital name and responds with a string
 3. Use requests library to handle REST Countries API
+
+#### Version 1.1
+
+Build 1.1 Feature Tasks
+
+1. Allow lower and capitalize input in url
+
 
 ### To run capital-finder:
 
